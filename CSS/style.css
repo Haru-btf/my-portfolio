@@ -1,0 +1,443 @@
+body{
+    color: #082b48;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #082b48;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* =========================
+section共通クラス
+========================= */
+
+.section-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    /* margin-bottom: 20px; */
+}
+
+.section-title-en {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* ======================================
+header
+====================================== */
+header {
+    padding: 10px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-title {
+    font-size: 32px;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-nav-item {
+    float: left;
+    margin-left: 10px;
+}
+
+.header-nav-item a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 38.4px;
+}
+
+/* ======================================
+top
+====================================== */
+.top {
+    padding-top: 65px;
+}
+
+/* ======================================
+about
+====================================== */
+.about {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-left {
+    width: 48%;
+}
+
+.profile-picture-1 {
+    width: 90%;
+}
+
+.about-name {
+    font-size: 24px;
+}
+
+.about-right {
+    width: 48%;
+}
+
+
+.profile-picture-2 {
+    width: 40%;
+}
+
+.about-message {
+    text-align: left;
+}
+/* ======================================
+service
+====================================== */
+.service {
+    padding: 100px 0;
+    background-color: #f3ece5;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.service-item {
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+/* ======================================
+work
+====================================== */
+.work {
+    padding: 100px 0;
+}
+
+.work-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.work-item {
+    width: 48%;
+}
+
+.work-item-img {
+    margin-bottom: 10px;
+}
+
+/* ======================================
+contact
+====================================== */
+.contact {
+    padding: 100px 0;
+    background-color: #f3ece5;
+    text-align: center;
+}
+
+.contact-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+        padding: 10px 20px;
+        display: inline-block;
+        background-color: #082b48;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 4px;
+        letter-spacing: 3px;
+        border: none;
+        text-align: center;
+    }
+    
+    .mail {
+        background-color: #fff;
+        color: black;
+
+    }
+
+.twitter {
+  background-color: #55acee;
+  margin-left: 20px;
+}
+
+/* ======================================
+footer
+====================================== */
+footer {
+    padding: 10px;
+    background-color: #856b52;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+}
+
+/* =========================
+=========================
+タブレット版
+=========================
+========================= */
+
+@media only screen and (max-width:767px) {
+
+/* ======================================
+header
+====================================== */
+header {
+    height: 80px;
+}
+.header-left {
+    float: none;
+}
+
+.header-title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.header-right {
+    float: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav-item a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ======================================
+top
+====================================== */
+.top {
+    padding-top: 80px;
+}
+
+/* =========================
+section共通クラス
+========================= */
+.section {
+    padding: 80px 0;
+}
+.section-title {
+    /* font-size: 24px; */
+    /* font-weight: bold;
+    text-align: center; */
+}
+
+.section p {
+    font-size: 14px;
+}
+
+
+/* ======================================
+service
+====================================== */
+.service {
+    padding: 80px 0;
+    background-color: #f3ece5;
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.service-item {
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+/* ======================================
+about
+====================================== */
+.about {
+    padding: 50px 0;
+}
+
+.about-wrapper {
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.about-left {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.profile-picture-1 {
+    width: 70%;
+}
+
+.about-right {
+    width: 90%;
+}
+
+
+.profile-picture-2 {
+    margin-bottom: 20px;
+}
+
+/* ======================================
+service
+====================================== */
+.service {
+    padding: 50px 0;
+}
+
+/* ======================================
+work
+====================================== */
+.work {
+    padding: 50px 0;
+}
+
+/* ======================================
+contact
+====================================== */
+.contact {
+    padding: 50px 0;
+}
+
+/* ======================================
+contact
+====================================== */
+.contact {
+    padding: 50px 0;
+}
+
+.btn {
+        font-size: 18px;
+    }
+
+/* ======================================
+footer
+====================================== */
+.copyright {
+    font-size: 10px;
+}
+
+
+}
+
+/* =========================
+=========================
+スマホ版
+=========================
+========================= */
+
+@media only screen and (max-width:429px) {
+
+/* ======================================
+header
+====================================== */
+.header-nav-item a {
+    font-size: 12px;
+}
+
+/* ======================================
+service
+====================================== */
+.service-wrapper {
+    flex-wrap: wrap;
+}
+
+.service-plan {
+    margin-bottom: 20px;
+}
+
+/* ======================================
+work
+====================================== */
+.work-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work-item {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.work-item-img {
+    margin-bottom: 15px;
+}
+
+/* ======================================
+contact
+====================================== */
+.btn-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.twitter {
+    margin:0;
+  }
+
+/* ======================================
+footer
+====================================== */
+footer {
+    padding: 8px;
+}
+
+.copyright {
+    font-size: 10px;
+    text-align: center;
+}
+
+}
